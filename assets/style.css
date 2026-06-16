@@ -21,13 +21,13 @@ body{
     padding:25px;
     box-shadow:0 5px 20px rgba(0,0,0,.08);
     height:100%;
+    overflow:hidden;
     transition:.3s;
 }
 
 .card-review:hover{
     transform:translateY(-5px);
 }
-
 .review-image{
     width:100% !important;
     height:250px !important;
