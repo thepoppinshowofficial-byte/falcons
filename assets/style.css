@@ -1,86 +1,93 @@
-.cookie-backdrop{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.5);
-    backdrop-filter:blur(8px);
-    -webkit-backdrop-filter:blur(8px);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:999999;
+```css
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f7fb;
 }
 
-.cookie-modal{
-    background:#ffffff;
-    width:90%;
-    max-width:550px;
-    padding:35px;
+.hero{
+    background:#0f172a;
+    color:#fff;
+    padding:80px 0;
+}
+
+.hero img{
+    width:100%;
     border-radius:20px;
-    text-align:center;
-    box-shadow:0 20px 60px rgba(0,0,0,.25);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
-.cookie-modal h3{
-    margin-bottom:15px;
-    font-size:28px;
-    font-weight:700;
-    color:#111827;
-}
-
-.cookie-modal p{
-    color:#4b5563;
-    line-height:1.8;
-    margin-bottom:25px;
-}
-
-.cookie-actions{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.cookie-btn{
-    border:none;
-    padding:12px 30px;
-    border-radius:12px;
-    cursor:pointer;
-    font-weight:600;
+.card-review{
+    background:#fff;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    height:100%;
     transition:.3s;
 }
 
-.cookie-btn:hover{
-    transform:translateY(-2px);
+.card-review:hover{
+    transform:translateY(-5px);
 }
 
-.cookie-accept{
+.review-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.rating{
+    color:#f59e0b;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.disclaimer{
+    background:#fff8e1;
+    border-left:5px solid #f59e0b;
+    padding:20px;
+    margin:30px 0;
+    border-radius:8px;
+}
+
+.btn-primary{
     background:#2563eb;
-    color:#ffffff;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
 }
 
-.cookie-reject{
-    background:#e5e7eb;
-    color:#111827;
+.btn-primary:hover{
+    background:#1d4ed8;
 }
 
-.fade-out{
-    opacity:0;
-    transition:opacity .2s ease;
+footer{
+    background:#111827;
+    color:#fff;
+    padding:40px 0;
+    margin-top:50px;
 }
 
-@media(max-width:576px){
+footer a{
+    color:#93c5fd;
+    text-decoration:none;
+}
 
-    .cookie-modal{
-        width:95%;
-        padding:25px;
+footer a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+
+    .hero{
+        text-align:center;
     }
 
-    .cookie-actions{
-        flex-direction:column;
-    }
-
-    .cookie-btn{
-        width:100%;
+    .review-image{
+        height:180px;
     }
 
 }
+```
